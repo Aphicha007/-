@@ -1,9 +1,24 @@
+/* Base responsive grid layout */
+.gallery-grid {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+/* Desktop and large screens (default) */
+@media (min-width: 1201px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/* Laptop and medium screens */
 @media (max-width: 1200px) {
     .gallery-grid {
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
     }
 }
 
+/* Tablet and small screens */
 @media (max-width: 768px) {
     .gallery-grid {
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
@@ -15,13 +30,20 @@
     }
     
     .ribbon {
-        width: clamp(40px, 8vw, 50px);
-        height: clamp(40px, 8vw, 50px);
-        top: calc(clamp(40px, 8vw, 50px) / -2);
-        left: calc(50% - clamp(40px, 8vw, 50px) / 2);
+        --ribbon-size: clamp(40px, 8vw, 50px);
+        width: var(--ribbon-size);
+        height: var(--ribbon-size);
+        top: calc(var(--ribbon-size) / -2);
+        left: calc(50% - var(--ribbon-size) / 2);
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 10% auto;
     }
 }
 
+/* Mobile phones */
 @media (max-width: 480px) {
     .gallery-grid {
         grid-template-columns: 1fr;
@@ -33,31 +55,22 @@
     }
     
     .modal-image-container {
-        padding-top: 75%; /* Adjust aspect ratio for mobile */
+        padding-top: 75%; /* Adjusted aspect ratio for mobile */
     }
 }
 
 /* Touch device optimizations */
 @media (hover: none) {
-    .gallery-item:hover {
-        transform: none;
-    }
-    
-    .start-button:hover {
-        transform: none;
-    }
-    
+    .gallery-item:hover,
+    .start-button:hover,
     .music-toggle:hover {
         transform: none;
     }
 }
 
-/* Viewport height fixes for mobile browsers */
+/* iOS Safari viewport height fix */
 @supports (-webkit-touch-callout: none) {
-    .modal {
-        height: -webkit-fill-available;
-    }
-    
+    .modal,
     body {
         min-height: -webkit-fill-available;
     }
@@ -74,7 +87,7 @@
     }
 }
 
-/* Print styles improvement */
+/* Print styles */
 @media print {
     .gallery-grid {
         display: block;
@@ -84,12 +97,5 @@
         break-inside: avoid;
         page-break-inside: avoid;
         margin-bottom: var(--spacing-lg);
-    }
-}
-
-@media (max-width: 768px) {
-    .modal-content {
-        width: 90%;
-        margin: 10% auto;
     }
 }
