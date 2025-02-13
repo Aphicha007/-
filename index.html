@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +13,26 @@
     <!-- Responsive -->
     <link rel="stylesheet" href="assets/css/responsive.css"> 
     <!-- Icon -->
-    <link rel="Icon" href="icon/icon.png"> 
+    <link rel="icon" href="icon/icon.png"> 
 </head>
 <body>
 
+     <!-- Timer Counter -->
+     <div class="time-counter">
+        <div>เรารักกันมาแล้ว</div>
+        <div id="timer"></div>
+    </div>
+
     <!-- Welcome Message -->
     <div class="welcome-message">
-        <h1>Happy Valentine's Day! ❤️</h1>
-        <p>Click the button below to open your special gift</p>
+        <h1>1 ปี ที่ผ่านมามีอะไร❤️</h1>
+        <p>กดคลิกเพื่อ ไปต่ออออ</p>
         <button class="start-button">Open Gift</button>
     </div>
-    <!-- End Of Welcome Messages -->
 
     <div class="floating-hearts"></div>
     <div class="gift-container">
         <div class="gift-box">
-<!--             <div class="ribbon"></div> -->
             <div class="side front">
                 <div class="heart"></div>
             </div>
@@ -44,37 +48,73 @@
                     <div class="polaroid-tape left"></div>
                     <div class="polaroid-tape right"></div>
                     <img src="assets/gallery/1.jpg" alt="Romantic moment 1">
-                    <div class="gallery-caption">Our First Date ❤️</div>
+                    <div class="gallery-caption">เราไปกินชาบูด้วยกัน และอร่อยมากๆๆ ❤️</div>
                 </div>
                 <div class="gallery-item" style="--rotation: 2deg; --delay: 0.2s; --tape-rotation: 45deg;">
                     <div class="polaroid-tape left"></div>
                     <div class="polaroid-tape right"></div>
-                    <img src="assets/gallery/1.jpg" alt="Romantic moment 2">
-                    <div class="gallery-caption">Beautiful Sunset Together 🌅</div>
+                    <img src="assets/gallery/2.jpg" alt="Romantic moment 2">
+                    <div class="gallery-caption">เป็นงานคริสต์มาสต์ที่จัดในโรงเรียน และได้เป็นแฟน จากปีกี่เป็นแค่เพื่อน 🌅</div>
                 </div>
                 <div class="gallery-item" style="--rotation: -2deg; --delay: 0.4s; --tape-rotation: -30deg;">
                     <div class="polaroid-tape left"></div>
                     <div class="polaroid-tape right"></div>
-                    <img src="assets/gallery/1.jpg" alt="Romantic moment 3">
-                    <div class="gallery-caption">Perfect Evening 🌙</div>
+                    <img src="assets/gallery/3.jpg" alt="Romantic moment 3">
+                    <div class="gallery-caption">เราไปถ่ายรูป จ้างตากล้องครั้งแรกกกก 🌙</div>
                 </div>
                 <div class="gallery-item" style="--rotation: 3deg; --delay: 0.6s; --tape-rotation: 30deg;">
                     <div class="polaroid-tape left"></div>
                     <div class="polaroid-tape right"></div>
-                    <img src="assets/gallery/1.jpg" alt="Romantic moment 4">
-                    <div class="gallery-caption">Sweet Memories 💕</div>
+                    <img src="assets/gallery/4.jpg" alt="Romantic moment 4">
+                    <div class="gallery-caption">อันนี้คืองานคริสต์มาสต์ปีแรกที่เราได้ถ่ายรูปด้วยกาน และตอนนั้นยังเป็นแค่เพื่อน 💕</div>
                 </div>
                 <div class="gallery-item" style="--rotation: -1deg; --delay: 0.8s; --tape-rotation: -40deg;">
                     <div class="polaroid-tape left"></div>
                     <div class="polaroid-tape right"></div>
-                    <img src="assets/gallery/1.jpg" alt="Romantic moment 5">
-                    <div class="gallery-caption">Together Forever 💑</div>
+                    <img src="assets/gallery/5.jpg" alt="Romantic moment 5">
+                    <div class="gallery-caption">ไปเที่ยวด้วยกานนนนน และเป็นประสบการณ์ที่เยี่ยมมมม 💑</div>
                 </div>
                 <div class="gallery-item" style="--rotation: 2deg; --delay: 1s; --tape-rotation: 40deg;">
                     <div class="polaroid-tape left"></div>
                     <div class="polaroid-tape right"></div>
-                    <img src="assets/gallery/1.jpg" alt="Romantic moment 6">
-                    <div class="gallery-caption">Happy Moments ✨</div>
+                    <img src="assets/gallery/6.jpg" alt="Romantic moment 6">
+                    <div class="gallery-caption">อันนี้ไปต่างจังหวัดด้วยกันครั้งแรกก ✨</div>
+                </div>
+                <div class="gallery-item" style="--rotation: -2deg; --delay: 0.4s; --tape-rotation: -50deg;">
+                    <div class="polaroid-tape left"></div>
+                    <div class="polaroid-tape right"></div>
+                    <img src="assets/gallery/7.jpg" alt="Romantic moment 7">
+                    <div class="gallery-caption">อยู่จนดึกครั้งแรกก ไปดูหิ่งห้อยย ✨</div>
+                </div>
+                <div class="gallery-item" style="--rotation: -1deg; --delay: 1s; --tape-rotation: 50deg;">
+                    <div class="polaroid-tape left"></div>
+                    <div class="polaroid-tape right"></div>
+                    <img src="assets/gallery/8.jpg" alt="Romantic moment 8">
+                    <div class="gallery-caption">ล้างหน้า ล้างตาด้วยกันครั้งแรกก แฟนล้างหน้าให้ด้วยยย ✨</div>
+                </div>
+                <div class="gallery-item" style="--rotation: 2deg; --delay: 0.6s; --tape-rotation: -60deg;">
+                    <div class="polaroid-tape left"></div>
+                    <div class="polaroid-tape right"></div>
+                    <img src="assets/gallery/9.jpg" alt="Romantic moment 9">
+                    <div class="gallery-caption"> จุดเริ่มต้นของความรักก ที่บังเกิดด จนทำให้เรามาเป็นแฟนกัน✨</div>
+                </div>
+                <div class="gallery-item" style="--rotation: 1deg; --delay: 0.6s; --tape-rotation: 60deg;">
+                    <div class="polaroid-tape left"></div>
+                    <div class="polaroid-tape right"></div>
+                    <img src="assets/gallery/10.jpg" alt="Romantic moment 10">
+                    <div class="gallery-caption">ถ่ายรูปกับตู้ เสียเงิน กับค่ารูปไปหลายร้อยบาท 5555+✨</div>
+                </div>
+                <div class="gallery-item" style="--rotation: -1deg; --delay: 0.6s; --tape-rotation: -70deg;">
+                    <div class="polaroid-tape left"></div>
+                    <div class="polaroid-tape right"></div>
+                    <img src="assets/gallery/11.jpg" alt="Romantic moment 11">
+                    <div class="gallery-caption">เป็นการไปเที่ยวกับแฟนแบบเปิดตัวเปิดใจ✨</div>
+                </div>
+                <div class="gallery-item" style="--rotation: -2deg; --delay: 0.8s; --tape-rotation: 70deg;">
+                    <div class="polaroid-tape left"></div>
+                    <div class="polaroid-tape right"></div>
+                    <img src="assets/gallery/12.jpg" alt="Romantic moment 12">
+                    <div class="gallery-caption">จนทำให้ตอนนี้เค้าหลงรักเธอจนเค้ารักเธอมากๆ ไม่ยอมไปไหนแล้ว อยู่ด้วยกันไปนานๆนะคะ✨</div>
                 </div>
             </div>
         </div>
@@ -84,8 +124,9 @@
         <i class="fas fa-music"></i>
     </button>
 
-    <div class="credits">Made with ❤️ by Stevencodelab</div>
+    <div class="credits">จาก วิลเลียม สุดหล่อ❤️</div>
 
+    <!-- Scripts -->
     <script src="assets/js/main.js"></script>
 </body>
 </html>
