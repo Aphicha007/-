@@ -6,6 +6,15 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "vite": "^6.1.0"
-  }
+  },
+  "name": "valentines-gift",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Aphicha007/-.git",
+  "author": "<pvivo6444@gmail.com>",
+  "license": "MIT"
 }
+
